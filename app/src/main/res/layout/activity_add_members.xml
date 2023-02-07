@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="-310dp"
+        android:layout_marginEnd="-70dp"
+        android:background="@drawable/top" />
+
+  <!--  <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:elevation="20dp"
+        android:id="@+id/round_logo"
+        android:src="@drawable/round_logo"
+        tools:ignore="MissingClass">
+    </de.hdodenhof.circleimageview.CircleImageView>-->
+
+    <!--<FrameLayout
+        android:id="@+id/mainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/round_logo">-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+           >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mgmylogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:shape="oval"
+                android:layout_marginHorizontal="30dp"
+                android:src="@drawable/gymlogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Member Details"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+            </TextView>
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:hint="Enter Member Name"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/mnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:ems="10"
+                android:textSize="20dp"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"/>
+
+            <EditText
+                android:id="@+id/maddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:hint="Member Address"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/mradiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:text="Female"/>
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/mpayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:hint="Fees"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"/>
+            <Spinner
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+
+
+
+                android:textColor="@color/black"
+                android:elevation="10dp"/>
+
+            <Spinner
+                android:id="@+id/mbatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"/>
+
+
+
+            <TextView
+                android:id="@+id/mjoindate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:hint="Join Date"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/motherinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="15dp"
+                android:hint="Add More Details"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                />
+
+            <Button
+                android:id="@+id/pick_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:background="@color/saffron"
+                android:text="Pick Image"/>
+
+
+
+            <!-- <EditText
+                 android:id="@+id/editTextPhone"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="phone" />-->
+
+              <Button
+                  android:id="@+id/msubmit"
+                  android:layout_width="100dp"
+                  android:layout_height="70dp"
+                  android:background="@drawable/next_btn"
+                  android:text="Done"
+                  android:layout_gravity="center"
+                  android:layout_marginVertical="20dp"/>
+        </LinearLayout>
+    <!--</FrameLayout>-->
+
+    <!--<ProgressBar
+        android:id="@+id/signup4_pgbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone"/>-->
+
+        </ScrollView>
+</RelativeLayout>
